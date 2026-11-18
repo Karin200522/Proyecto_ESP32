@@ -1,0 +1,24 @@
+Referencia,Cantidad,Componente,Valor/Modelo,Encapsulado,Notas
+U1,1,Placa ESP32,ESP32 DevKit V1 (30 pines) o DevKitC (38 pines),Modulo,4.5 V al pin VIN/5V
+D_AM1-D_AM12,12,LED,Amarillo 5 mm,THT 5 mm,Canal 1 (GPIO25)
+D_RO1-D_RO12,12,LED,Rojo 5 mm,THT 5 mm,Canal 2 (GPIO26)
+D_VE1-D_VE12,12,LED,Verde 5 mm,THT 5 mm,Canal 3 (GPIO27)
+R_AM1-R_AM12,12,Resistencia,150 ohm 1/4 W,THT,Una por LED amarillo
+R_RO1-R_RO12,12,Resistencia,150 ohm 1/4 W,THT,Una por LED rojo
+R_VE1-R_VE12,12,Resistencia,150 ohm (verde GaP ~2.2 V) o 82 ohm (verde InGaN ~3.1 V),THT,Medir Vf antes de elegir
+Q1-Q4,4,Transistor NPN,2N2222A / PN2222A,TO-92,Q1-Q3 LEDs; Q4 buzzer
+R1-R3,3,Resistencia,330 ohm 1/4 W,THT,Base de Q1-Q3
+R4,1,Resistencia,1 kohm 1/4 W,THT,Base de Q4 (buzzer)
+R5-R8,4,Resistencia,10 kohm 1/4 W,THT,Pull-down base-emisor de Q1-Q4
+R9,1,Resistencia,10 kohm 1/4 W,THT,Divisor de la LDR
+R10,1,Resistencia,47 ohm 1/4 W,THT,Serie con el buzzer (opcional)
+D1,1,Diodo,1N4148 (o 1N4001),DO-35,Antiparalelo al buzzer
+LDR1,1,Fotorresistencia,GL5528,THT 5 mm,A GPIO34 (ADC1_CH6)
+BZ1,1,Buzzer pasivo,12 mm 3-5 V,THT,Si es piezo agregar 1 kohm en paralelo
+LCD1,1,LCD 16x2 + modulo I2C,HD44780 + PCF8574,Modulo,VCC a 4.5 V; direccion 0x27/0x3F
+U2,1,Convertidor de nivel,BSS138 4 canales,Modulo,Opcion A para I2C 3.3 V <-> 4.5 V
+R11-R12,2,Resistencia,4.7 kohm 1/4 W,THT,Solo opcion B (pull-ups I2C a 3.3 V)
+C1,1,Capacitor electrolitico,1000 uF 10 V (min 470 uF),Radial,Entrada de la fuente
+C2-C4,3,Capacitor ceramico,100 nF,THT,Desacoplo VIN y LCD; filtro LDR
+J1,1,Fuente + conector,4.5 V 1.2 A + jack o bornera,—,Verificar polaridad
+—,1-2,Protoboard + cables,830 puntos,—,—
